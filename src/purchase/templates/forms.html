@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>入力フォーム</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>ユーザー情報入力</h1>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="email" class="form-label">メールアドレス</label>
+          <input type="text" class="form-control" id="email">
+        </div>
+        <div class="col-md-6">
+          <label for="phone_number" class="form-label">電話番号</label>
+          <input type="text" class="form-control" id="phone_number">
+        </div>
+        <div class="col-12">
+          <label for="name1" class="form-label">名前(カタカナ)</label>
+          <input type="text" class="form-control" id="name1" placeholder="タナカ タロウ">
+        </div>
+        <div class="col-12">
+          <label for="name2" class="form-label">名前</label>
+          <input type="text" class="form-control" id="name2" placeholder="田中 太郎">
+        </div>
+        <div class="col-12">
+            <label for="zyuusyo" class="form-label">住所</label>
+            <input type="text" class="form-control" id="zyuusyo" >
+          </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">番地・建物名・号室</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="period" class="form-label">購入期間</label>
+          <select id="period" class="form-select">
+            <option selected>１カ月</option>
+            <option selected>３カ月</option>
+            <option selected>６カ月</option>
+            <option selected>１２カ月</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">配達法</label>
+          <select id="inputZip" class="form-control" >
+            <option selected>お急ぎ便</option>
+            <option selected>普通便</option>
+        </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check 
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">完了</button>
+        </div>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
